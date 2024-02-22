@@ -6,18 +6,20 @@ const userList = [
     name: "Khes Adderley",
     email: "khesadderley@gmail.com",
     number: 1234567890,
+    uniqueCode: nanoid()
   },
   {
     id: 2,
     name: "Frances Curry",
     email: "francescurry@gmail.com",
-    number: 234456567,
+    number: 1234456567,
+    uniqueCode: nanoid()
   },
 ];
 
 const initialState = {
-  users: userList,
-};
+  users: userList, 
+}
 
 export const userSlice = createSlice({
   name: "users",
